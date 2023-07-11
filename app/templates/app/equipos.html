@@ -1,0 +1,38 @@
+{% extends 'app/base.html' %}
+
+
+
+
+
+
+{% load static %}
+
+
+{% comment %} {% block js %}
+<script src="{% static 'app/static/js/index.js' %}"></script>
+{%endblock%} {% endcomment %}
+
+<!-- contenido de la pagina -->
+{% block content %}
+
+          
+          <h1>Equipos de la NBA</h1>
+          <div class="container">
+            
+            <div>
+              <button class="btn btn-primary" id="buscar">Mostrar equipos</button>
+              <table class="table mt-4" id="tabla-equipos">
+                <thead>
+                  <tr>
+                    <th>Nombre</th>
+                    <th>Ciudad</th>
+                    <th>División</th>
+                    <th>Conferencia</th>
+                  </tr>
+                </thead>
+                <tbody id="equipos"></tbody>
+              </table>
+            </div>
+          </div>
+          
+{%endblock%}       

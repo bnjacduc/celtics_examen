@@ -1,0 +1,37 @@
+{% extends 'app/base.html' %}
+
+{% load static %} 
+
+<!-- contenido de la pagina -->
+{% block content %}
+
+
+<h1>Formación Titular </h1>
+<div class="grid-container">
+  <div class="grid-item">
+    <img src="{% static 'img/marcus_1.jpg' %}" alt="marcus">
+    <h2>Marcus Smart</h2>
+    <p>Posición: Base 1.93 m, 99 kg.</p>
+  </div>
+  <div class="grid-item">
+    <img src="{% static 'img/jaylen.jpg' %}" alt="brown">
+    <h2>Jaylen Brown</h2>
+    <p>Posición: Escolta 1.98 m, 101 kg</p>
+  </div>
+  <div class="grid-item">
+    <img src="{% static 'img/jayson.jpg' %}" alt="jayson">
+    <h2>Jayson Tatum</h2>
+    <p>Posición: Alero 2.03 m, 95 kg </p>
+  </div>
+  <div class="grid-item">
+    <img src="{% static 'img/al.jpg' %}" alt="al">
+    <h2>Al Horford</h2>
+    <p>Posición: Ala-pivot 	2.06 m, 108 kg</p>
+  </div>
+  <div class="grid-item">
+    <img src="{% static 'img/rob.jpg' %}" alt="rob">
+    <h2>Robert Williams III</h2>
+    <p>Posición: Pivot 2.06 m, 107 kg</p>
+  </div>
+</div>
+{% endblock %}

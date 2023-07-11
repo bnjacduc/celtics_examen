@@ -1,0 +1,38 @@
+{%extends 'app/base.html'%}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-12 col-md-6 offset-md-3">
+        <div class="card">
+            <div class="card-body" >
+                <div class="form">
+                    <h2 class="titulo " style="color: #4b44db;">Editar Producto</h2>
+                    <hr>
+                    
+                    <form action="" method="post" enctype="multipart/form-data"  >
+                        
+                        {% csrf_token %}
+                        {{ form | crispy }}
+                        
+                        
+                
+                        <div class="d-flex justify-content-end ">
+                            <input type="reset" name="Cancelar" class="button btn-secondary" style="background-color: #6e67f7;">
+                            &nbsp;
+                            <input type="submit" value="Editar" class="button btn-primary" style="background-color: #6e67f7;">
+                        </div>
+
+                    </form>
+
+                    {{mensaje}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

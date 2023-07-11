@@ -1,0 +1,28 @@
+{% extends 'app/base.html' %}
+
+
+{% load static %}
+<!-- contenido de la pagina -->
+{% block content %}
+
+
+  <h1>Estadio</h1>
+  <div class="row">
+    <div class="col-sm-6">
+      <img src="{% static 'img/estadio1.jpg' %}" alt="est1">
+    </div>
+    <div class="col-sm-6">
+      <img src="{% static 'img/estadio2.jpg' %}" alt="est2">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <p>El TD Garden es un pabellón deportivo multifuncional ubicado en Boston, Massachusetts. Es el hogar de los Boston Celtics de la NBA y de los Boston Bruins de la NHL. Además de ser utilizado para deportes, también es un lugar para conciertos y otros eventos. El estadio cuenta con capacidad para 19,580 espectadores durante los partidos de baloncesto.</p>
+      <p>Dirección: 100 Legends Way, Boston, MA 02114, Estados Unidos</p>
+    </div>
+  </div>
+  
+
+
+  {% endblock %}
+

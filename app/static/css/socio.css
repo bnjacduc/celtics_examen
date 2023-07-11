@@ -1,0 +1,131 @@
+.logo {
+    width: 10px;
+    height: 10px;
+  }
+  
+  
+      
+      /*.head ul {
+      display: flex;
+      justify-content: flex-end;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      }
+      
+      .head li {
+      margin: 0 10px;
+      }
+      
+      .head li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      }
+      
+      .head li a.active {
+      font-weight: bold;
+      }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      /* Estilos para el formulario */
+      form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      }
+      
+      .form-group {
+      margin-bottom: 20px;
+      }
+      
+      label {
+      display: block;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      font-family:'Courier New', Courier, monospace;
+      }
+      
+      input[type="email"],
+      input[type="text"],
+      input[type="tel"] {
+      border: 2px solid #333;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 16px;
+      width: 100%;
+      max-width: 500px;
+      }
+      
+      button[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 18px;
+      margin-top: 20px;
+      cursor: pointer;
+      }
+      
+      button[type="submit"]:hover {
+      background-color: #444;
+      }
+      h1 {
+        font-family: 'Oswald', sans-serif;
+        color: rgb(3, 63, 3);
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        font-size: 2em;
+      }
+  
+      
+  
+        img {
+          opacity: 1;
+        }
+  
+        .form-style {
+          
+          width: 95%; margin: 0 auto; 
+          background:no-repeat 0px 0px;
+          background-size: contain; 
+          background-position: center;
+          padding: 30px 33px 67px;
+          
+          box-shadow: 20px 35px 44px 44px rgba(0, 0, 0, 0.72); 
+          box-sizing: border-box;
+      }
+      .form-style img{
+          
+              max-width: 1500px;
+              width: auto;
+              align-items: center;
+              justify-content: center;
+              margin: 0 auto;
+              height: 40vh;
+              opacity: 0.2;
+              box-sizing: border-box;
+              
+            
+      }

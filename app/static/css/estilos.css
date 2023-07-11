@@ -1,0 +1,30 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: darkgreen;
+  color: white;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  margin-left: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}

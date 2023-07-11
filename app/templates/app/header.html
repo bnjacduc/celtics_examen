@@ -1,0 +1,76 @@
+<style>
+  .nav {
+    background-color: #00471b;
+    color: #ffffff;
+  }
+  
+  .nav .nav-link {
+    color: #ffffff;
+  }
+  
+  .nav .nav-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  .img{
+    float: left;
+    color: #ffffff;
+    
+  }
+  </style>
+  {%load static%}
+  <title>base</title>
+
+
+  <nav>
+    
+    <div>
+    <ul class="nav justify-content-end">
+
+      <a class="navbar-brand" href="{% url 'inicio'%}">
+        <img src="{% static 'img/celtic_chico.png' %}"   width="50" height="50" alt="img">
+      </a>
+    
+      <li class="nav-item">
+        <a class="nav-link active" href="{% url 'inicio' %}">Inicio</a>
+        
+
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="{% url 'jugadores' %}">Jugadores</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="{% url 'estadio' %}">Estadio</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="{% url 'socio' %}">Socio</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="{% url 'equipos' %}">Equipos</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="{% url 'entradas' %}">Entradas</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="{% url 'crear_producto' %}">Agregar Producto</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="{% url 'lista_productos' %}">Tienda</a>
+    </li>
+        
+      {% if user %} 
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'logout'%}">Cerrar sesión</a>
+        </li>
+        <li class="nav-item">
+          <span class="nav-link">Bienvenido, {{ user.username }}</span>
+        </li>
+      {% else %}
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'login'%}">Iniciar sesión</a>
+        </li>
+      {% endif %}
+
+  </ul>
+</nav>
+</div>

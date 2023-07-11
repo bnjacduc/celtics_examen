@@ -1,0 +1,33 @@
+/* Archivo CSS para la lista de productos */
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Estilos para los enlaces "Agregar Producto", "Editar" y "Eliminar" */
+  a {
+    display: inline-block;
+    margin-right: 8px;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilos para la imagen de producto */
+  .product-image {
+    width: 10px;
+  }
+  
+
+

@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Celtics</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    
+
+    
+   <!-- css  -->
+  
+   <link rel="stylesheet" href="{% static 'css/header.css' %}">
+   <link rel="stylesheet" href="{% static 'css/estadio.css' %}">
+   <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+   <link rel="stylesheet" href="{% static 'css/jugadores.css' %}">
+   <link rel="stylesheet" href="{% static 'css/socio.css' %}">
+   <link rel="stylesheet" href="{% static 'css/inicio.css' %}">
+   <link rel="stylesheet" href="{% static 'css/lista.css' %}">
+   <link rel="stylesheet" href="{% static 'css/entradas.css' %}">
+ {%include 'app/header.html'%}
+  </head>
+
+<body>
+  <div class="container-fluid">
+    {%block content%}
+    {%endblock %}
+    
+  </div>
+
+  {% block js %}
+  <script src="{% static 'js/index.js' %}"></script>
+  <script src="{% static 'js/carrusel.js' %}"></script>
+  <script src="{% static 'js/entrada.js' %}"></script>
+  <script src="{% static 'js/formulario.js' %}"></script>
+  {%endblock%}
+
+</body>
+
+
+
+{%include 'app/footer.html'%}
+
+

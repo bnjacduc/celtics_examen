@@ -1,0 +1,13 @@
+#hola{
+        
+    max-width: 1500px;
+    width: auto;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    height: 40vh;
+    opacity: 0.2;
+    box-sizing: border-box;
+    
+  
+  }

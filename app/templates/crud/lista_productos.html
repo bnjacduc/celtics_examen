@@ -1,0 +1,48 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+<!-- contenido de la pagina -->
+{% block content %}
+    <h1>Lista de Productos</h1>
+
+<a href="{% url 'crear_producto' %}">Agregar Producto</a>
+
+<table>
+  <thead>
+    <tr>
+      <th>Código</th>
+      <th>Nombre</th>
+      <th>Precio</th>
+      <th>Imagen</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for producto in productos %}
+    <tr>
+      <td>{{ producto.codigo }}</td>
+      <td>{{ producto.nombre }}</td>
+      <td>{{ producto.precio }}</td>
+      {% comment %} <td><img src= static/Fotos/{{ Fotos.img }} style="width: 100px;"/> </td> {% endcomment %}
+      
+      
+      {% comment %} <td><img src="{% static 'app/static/Fotos/' %}" alt="est2" style="width: 100px;"/> </td> {% endcomment %}
+
+      <td><img src= "{{ producto.img.url }}"  style="width: 100px;"/> </td>
+             
+      <td>
+        <a href="{% url 'editar_producto' producto.codigo %}">Editar</a>
+        <a href="{% url 'eliminar_producto' producto.codigo %}">Eliminar</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{%endblock%}
+
+
+
+
+
+
+   

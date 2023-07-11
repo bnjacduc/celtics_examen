@@ -1,0 +1,44 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+<!-- contenido de la pagina -->
+{% block content %}
+
+
+
+<h1>Boston Celtics</h1>
+    
+
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="{% static 'img/celtics.jpg' %}" alt="xd"style="width:100%">
+      
+  </div>
+  <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="{% static 'img/celtic2.jpg' %}" alt="xd2"style="width:100%">
+      
+  </div>
+  <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="{% static 'img/celtic3.jpg' %}" alt="xd3"style="width:100%">
+      <!-- <div class="text">Caption Three</div> -->
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+
+
+
+{% endblock %}
